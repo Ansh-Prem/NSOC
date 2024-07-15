@@ -1,0 +1,10 @@
+My Name is ANSH PREM(2302CS01).
+I've made this project for NSoC SPACE JAM(week 2).
+The project is about an animation based on space.
+In which Earth is rotating and moon is revolving around Earth.
+And, I know my aspects are beyond the actual phenomena.
+But This is just for idea of animations we can use to adore our project.
+And to show what can we with html css.
+
+And one thing more I made this animation without js file because I don't know why my js compiler is working well and was showing some glitches but I 've done all js scripting
+in html file itself.

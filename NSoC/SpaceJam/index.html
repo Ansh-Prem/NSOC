@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANSH PREM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!--SHOOTING STARS-->
+        <div class="shooting-container" style="top: -10%; left: 10%;">
+            <div class="Shooting">
+                <div class="trail"></div>
+                <div class="core"></div>
+            </div>
+        </div>
+        <div class="shooting-container" style="top: -10%; left: 20%;">
+            <div class="Shooting">
+                <div class="trail"></div>
+                <div class="core"></div>
+            </div>
+        </div>
+        <div class="shooting-container" style="top: -10%; left: 30%;">
+            <div class="Shooting">
+                <div class="trail"></div>
+                <div class="core"></div>
+            </div>
+        </div>
+        <div class="shooting-container" style="top: -20%; left: 40%;">
+            <div class="Shooting">
+                <div class="trail"></div>
+                <div class="core"></div>
+            </div>
+        </div>
+        <div class="shooting-container" style="top: -10%; left: 50%;">
+            <div class="Shooting">
+                <div class="trail"></div>
+                <div class="core"></div>
+            </div>
+        </div>
+        <div class="shooting-container" style="top: -20%; left: 55%;">
+            <div class="Shooting">
+                <div class="trail"></div>
+                <div class="core"></div>
+            </div>
+        </div>
+        <div class="shooting-container" style="top: -10%; left: 60%;">
+            <div class="Shooting">
+                <div class="trail"></div>
+                <div class="core"></div>
+            </div>
+        </div>
+        <div class="shooting-container" style="top: -20%; left: 70%;">
+            <div class="Shooting">
+                <div class="trail"></div>
+                <div class="core"></div>
+            </div>
+        </div>
+        <div class="shooting-container" style="top: -10%; left: 80%;">
+            <div class="Shooting">
+                <div class="trail"></div>
+                <div class="core"></div>
+            </div>
+        </div>
+        <div class="shooting-container" style="top: -20%; left: 65%;">
+            <div class="Shooting">
+                <div class="trail"></div>
+                <div class="core"></div>
+            </div>
+        </div>
+        <div class="shooting-container" style="top: -10%; left: 75%;">
+            <div class="Shooting">
+                <div class="trail"></div>
+                <div class="core"></div>
+            </div>
+        </div>
+        <div class="shooting-container" style="top: -20%; left: 85%;">
+            <div class="Shooting">
+                <div class="trail"></div>
+                <div class="core"></div>
+            </div>
+        </div>
+        <div class="shooting-container" style="top: 10%; left: 55%;">
+            <div class="Shooting">
+                <div class="trail"></div>
+                <div class="core"></div>
+            </div>
+        </div>
+        <div class="shooting-container" style="top: 20%; left: 25%;">
+            <div class="Shooting">
+                <div class="trail"></div>
+                <div class="core"></div>
+            </div>
+        </div>
+        <div class="shooting-container" style="top: 10%; left: 100%;">
+            <div class="Shooting">
+                <div class="trail"></div>
+                <div class="core"></div>
+            </div>
+        </div>
+        <!--SHOOTING STARS-->
+    <div class="space"></div>
+    <div class="earth"></div>
+    <!--<div class="shape"></div>-->
+    <div class="text"><h1>NSOC<br>PRESENTS</h1><p>SPACE JAM</p><p>BY ANSH PREM</p></div>
+    <div class="moon"></div>
+    <div class="stars"></div>
+    <div class="astronaut-1"></div>
+    <div class="ufo" id="ufo"></div>
+    
+
+    <script type="text/javascript">
+
+    //cosmic acceleration
+        for(i=0;i<600;i++)
+    {
+    document.querySelector("body").innerHTML+=`
+    <div class="stars"
+    style="
+            --x:${window.innerWidth*Math.random()};
+            --y:${window.innerHeight*Math.random()}">
+    </div>
+    `
+    }
+    //ufo
+    {
+        var cursor=document.querySelector("ufo");
+        document.addEventListener("mousemove",function(e){
+            ufo.style.cssText="left :"+e.clientX+"px ;top :"+e.clientY+"px;";
+        });
+    }
+
+    //shooting stars
+    function meteor(){
+        let amount=150;
+        let body=document.querySelector("body");
+        let count=0;
+
+        while(count<amount){
+        let body=document.createElement("#i");
+        let size=Math.random()*5;
+        let posX=Math.floor(Math.random()*window.innerWidth);
+        let delay=Math.random()*(-20);
+        let duration=Math.random()*5;
+
+        drop.style.width=`${0.1+size}px`;
+        drop.style.left=`${posX}px`;
+        drop.style.animationDelay=`${delay}s`;
+        drop.style.animationDuration=`${1+duration}s`;
+
+        body.appendChild(drop);
+        count++;
+        }
+    }
+    meteor();
+        
+
+    </script>
+</body>
+    
+</html>
